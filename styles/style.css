@@ -1,0 +1,578 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8faff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f97316;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav-links a {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+.nav-links .active {
+  font-weight: bold;
+  color: #000;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+}
+
+/* Banner Section */
+.banner {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 40px;
+}
+
+.banner-text {
+  max-width: 600px;
+}
+
+.banner-text h1 {
+  font-size: 42px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.banner-text .orange {
+  color: #f97316;
+}
+
+.banner-text p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* Image Section */
+.banner-image img {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .banner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .banner-text {
+    text-align: left;
+  }
+
+  .banner-image {
+    flex-shrink: 0;
+  }
+}
+
+/* Our Plants Section */
+.plants {
+  text-align: center;
+  padding: 60px 40px;
+  background-color: #f8faff;
+}
+
+.plants h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.plants .highlight {
+  color: #f97316;
+}
+
+.plants-subtitle {
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+}
+
+/* Plant Grid */
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Plant Card */
+.plant-card {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 200px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.plant-card:hover {
+  transform: translateY(-5px);
+}
+
+.plant-card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.plant-card h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.plant-card .price {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.plant-card button {
+  background-color: #f97316;
+  color: white;
+  padding: 8px 0;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.plant-card button:hover {
+  background-color: #e65c00;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f6fa;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.image-section {
+  position: relative;
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  top: -25px;
+  
+  /* right: 10px; */
+  width: 140px;
+  height: auto;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.text-section {
+  flex: 2 1 400px;
+  padding: 20px;
+}
+
+.text-section h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.text-section ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.text-section li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .badge {
+    width: 60px;
+    height: 60px;
+    top: 5px;
+    right: 5px;
+  }
+
+  .text-section h1 {
+    font-size: 20px;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  padding: 20px;
+}
+
+.deals-section {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h2 {
+  font-size: 2rem;
+}
+
+.highlight {
+  color: orange;
+  font-weight: bold;
+}
+
+.header p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Grid layout for deals */
+.deals-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* Deal card styles */
+.deal-card {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  min-height: 140px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.deal-card.large {
+  min-height: 150px;
+}
+
+.deal-card.large {
+  grid-row: span 2;
+  min-height: 150%;
+}
+
+
+.spacer {
+  margin-bottom: 40px;
+}
+
+
+/* Overlay on images */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 15px;
+  
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.discount {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.btn {
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #ff9900;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #e28700;
+}
+
+
+#deal1 {
+  background-image: url('../assets/deal-bloom.png');
+}
+
+#deal2 {
+  background-image: url('../assets/deal-ana.png');
+}
+
+#deal3 {
+  background-image: url('../assets/deal-zabo.png'); 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .deals-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .deal-card.large {
+    grid-row: auto;
+    min-height: 200px;
+  }
+}
+
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Subscribe Section */
+.subscribe-section {
+  background: url('../assets/news-letter-bg.png') no-repeat center center/cover;
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.subscribe-section .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.subscribe-section h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.subscribe-form {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.subscribe-form button {
+  padding: 10px 20px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.subscribe-form button:hover {
+  background-color: #e64a19;
+}
+
+/* Footer */
+.footer {
+  background-color: #f5f5f5;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-left {
+  flex: 1 1 250px;
+  margin-bottom: 20px;
+}
+
+.footer-left .logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  flex: 2 1 400px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-socials img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s;
+}
+
+.footer-socials img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .subscribe-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .subscribe-form button {
+    width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-socials {
+    margin-top: 20px;
+  }
+}
